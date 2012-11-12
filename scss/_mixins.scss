@@ -93,7 +93,11 @@ $serif-italic:      "DroidSerifItalic", Cambria, Times New Roman, Times, serif;
 $serif-bold:      	"DroidSerifBold", Cambria, Times New Roman, Times, serif;
 $serif-bold-italic:      "DroidSerifBoldItalic", Cambria, Times New Roman, Times, serif;
 
-$script:            "Courgette", Cambria, Times New Roman, Times, serif;
+$script:            "", Cambria, Times New Roman, Times, serif;
+
+// This would be an h1 font or something
+$display:            "", Cambria, Times New Roman, Times, serif;
+
 
 
 // Use font variants instead of font-weight/style
