@@ -134,6 +134,68 @@ ol {
 	list-style-type: decimal;
 }
 
+
+/*********************
+FORM & INPUT SYTLES
+*********************/
+
+form {
+	margin: 0.75em 0;
+	font-size: 0.9em;
+	li {
+		list-style-type: none;
+		clear: both;
+		margin-bottom: 0.7335em;
+
+		label,
+		small {
+			display: none;
+		}
+	}
+
+}
+
+input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	textarea {
+		@include border-radius(3px);
+		font-family: $sans-serif;
+		padding: 3px 6px;
+		background: #efefef;
+		border: 2px solid #cecece;
+		line-height: 1.5em;
+
+		&:focus {
+			background: #fefefe;
+			//border: $border-darker;
+		}
+
+		/* form validation */
+		&:invalid {
+			outline: none;
+			border-color: #fbc2c4;
+			background-color: #f6e7eb;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			    -ms-box-shadow: none;
+					box-shadow: none;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"] {
+		max-width: 400px;
+		min-width: 250px;
+	}
+
+	textarea {
+		resize: none;
+		width: 100%;
+		height: 150px;
+	}
+
 /*********************
 HEADER SYTLES
 *********************/
