@@ -1,3 +1,11 @@
+$(document).ready(function() {
+
+	// Add the slider
+	$('.flexslider').flexslider({
+		animation: "slide"
+	});
+
+});
 /*
  * jQuery FlexSlider v2.1
  * http://www.woothemes.com/flexslider/

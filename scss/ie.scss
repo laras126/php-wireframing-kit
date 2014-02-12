@@ -18,24 +18,21 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 */
 
-/* import mixins */
-@import "mixins";
+@import "susy";
 
-@import "481up";
-@import "768up";
-@import "1030up";
+@import "../fonts/font-awesome-4.0.3/scss/font-awesome";
 
-/* 
-you can call the larger styles if you want, but there's really no need 
-*/
+@import "lib/settings";
+@import "lib/mixins";
+@import "lib/utils";
+@import "lib/grid";
+
+@import "base";
+@import "middle";	
 
 
 /******************************************************************
 ADDITIONAL IE FIXES
-These fixes are now ONLY seen by IE, so you don't have to worry
-about using prefixes, although it's best practice. For more info
-on using Modernizr classes, check out this link:
-http://www.modernizr.com/docs/
 ******************************************************************/
 
 /*

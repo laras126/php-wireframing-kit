@@ -1,0 +1,59 @@
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+
+// Units
+$h1: 4.7rem;
+$h2: 2.9rem;
+$h3: 2.3rem;
+$sml: 1.4rem;
+$default: 2rem;
+
+//  Colors
+
+
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$orange: 		#a94d25;
+
+$dark-blue: 	#237fa9;
+$light-blue: 	lighten(desaturate($dark-blue, 30%), 25%);
+
+$white:  		#f4f7f9;
+$black: 		#231f20;
+$grey: 			lighten($black, 10%);
+
+$link-color: 		$alert-yellow;
+$link-hover: 		$orange;
+
+$light-txt: 	$white;
+
+$link-light: 	$light-blue;
+
+$link-color: 	$link-light;
+$link-hover: 	$orange;
+
+$light-accent: 	$light-blue;
+// $medium-accent: 	$green;
+$dark-accent: 	$dark-blue;
+
+// $btn-color: 		$dark-green;
+
+
+
+// Susy settings
+// TODO: incorporate modular scale here
+
+$total-columns  : 6;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 2em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+$container-style: fluid;
+
+$break 			: 38em;
+

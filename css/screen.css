@@ -5,10 +5,12 @@ Syntax error: File to import not found or unreadable: susy.
                 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
                 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets
                 Compass::SpriteImporter
-        on line 21 of /Users/laraschenck/Sites/starter-kit/scss/ie.scss
+        on line 4 of /Users/laraschenck/Sites/starter-kit/scss/screen.scss
+
+1: /Users/laraschenck/Sites/starter-kit/scss/screen.scss
 
 Backtrace:
-/Users/laraschenck/Sites/starter-kit/scss/ie.scss:21
+/Users/laraschenck/Sites/starter-kit/scss/screen.scss:4
 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:45:in `import'
 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -55,4 +57,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: susy.\A               Load paths:\A                 /Users/laraschenck/Sites/starter-kit/scss\A                 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 21 of /Users/laraschenck/Sites/starter-kit/scss/ie.scss"; }
+  content: "Syntax error: File to import not found or unreadable: susy.\A               Load paths:\A                 /Users/laraschenck/Sites/starter-kit/scss\A                 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/laraschenck/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 4 of /Users/laraschenck/Sites/starter-kit/scss/screen.scss\A \A 1: /Users/laraschenck/Sites/starter-kit/scss/screen.scss"; }

@@ -1,0 +1,47 @@
+// Here are some various, helpful shortcuts!
+
+.callout {
+	@extend .text-center;
+}
+
+.italic {
+	font-style: italic;
+    font-weight: 100;
+}
+
+.obscure-a {
+    a {
+        @include unstyled-link;
+    }
+}
+
+.text-center {
+	text-align: center;
+}
+
+.hlite-db {
+	color: $dark-blue;
+}
+
+.special {
+	color: $light-blue;	
+	//border-bottom: 3px solid $white;
+}
+
+.hlite-ul {
+	//border-bottom: 3px solid $light-blue;
+}
+
+.primary {
+    background: $white;
+    //@include border-radius(0.5rem);
+}
+
+.secondary {
+    background: $light-blue;
+    color: $white;
+}
+
+.tertiary {
+    background: $white;
+}

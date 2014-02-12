@@ -1,0 +1,9 @@
+
+// Mixins
+
+@mixin bubble($color) {
+	background-color: $color;
+	&.active {
+		background-color: darken($color, 40%);
+	}
+}
