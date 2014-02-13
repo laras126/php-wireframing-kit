@@ -4,9 +4,8 @@
 	@extend .text-center;
 }
 
-.italic {
+.greeting {
 	font-style: italic;
-    font-weight: 100;
 }
 
 .obscure-a {
@@ -20,28 +19,48 @@
 }
 
 .hlite-db {
-	color: $dark-blue;
+	color: $medAccent;
 }
 
 .special {
-	color: $light-blue;	
-	//border-bottom: 3px solid $white;
+	color: $darkAccent;	
+	
+    .callout-quote & {
+        font-family: $sans-serif;
+        color: $medAccent;
+    }
 }
 
-.hlite-ul {
-	//border-bottom: 3px solid $light-blue;
+.special-dark {
+    color: $black;  
 }
 
-.primary {
-    background: $white;
-    //@include border-radius(0.5rem);
+.fig-large {
+    width: 116%;
+    margin-left: -8%;
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    figcaption {
+        text-align: center;
+        font-size: $sml;
+        padding: $sml/2;
+        background-color: $lightAccent;
+    }
 }
 
-.secondary {
-    background: $light-blue;
-    color: $white;
-}
 
-.tertiary {
-    background: $white;
+.dark-button {
+    @include button($dark-blue);    
+    // TODO: is this necessary? Sheesh.
+    &:hover, 
+    &:focus,
+    &:visited, 
+    &:visited:hover, 
+    &:visited:focus {
+        color: $white;
+    }
 }

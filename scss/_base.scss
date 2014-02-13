@@ -1,13 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
 
 Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
 
 ******************************************************************/
 
@@ -15,48 +8,67 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 
+html {
+    font-size: 66%;    
+}
+
 body {
-	font-family: $sans-serif;
-	font-size: 100%;
-	line-height: 1.5;
-	color: #565656;
+    background-color: $mainBkgdClr;
+    font-family: $sans-serif;
+    font-size: $default;
+    font-weight: 100;
+    line-height: $line-height-base;
+    color: $mainFontClr;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dotted $medAccent;
 }
 
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
-	width: 96%;
-	margin: 0 auto;
+#container {
+    overflow-x: hidden;
+    position: relative;
 }
+
 
 /*********************
 LINK STYLES
 *********************/
 
 a, a:visited {
-	color: $link-color;
+    color: $linkClr;
+    text-decoration: none;
+    border-bottom: 1px dotted $lightAccent;
 
-	/* on hover */
-	&:hover, &:focus {
-		color: $link-hover;
-	}
+    /* on hover */
+    &:hover, &:focus {
+        color: $linkHoverClr;
+    }
 
-	/* on click */
-	&:active {
+    /* on click */
+    &:active {
+        color: $linkActiveClr;
+    }
 
-	}
-
-	/* mobile tap color */
-	&:link {
-		/*
-		this highlights links on iPhones/iPads.
-		so it basically works like the :hover selector
-		for mobile devices.
-		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
-	}
+    /* mobile tap color */
+    &:link {
+        /*
+        this highlights links on iPhones/iPads.
+        so it basically works like the :hover selector
+        for mobile devices.
+        */
+        -webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+    }
 }
 
 /******************************************************************
@@ -64,146 +76,165 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: $serif;
-	text-rendering: optimizelegibility;
-	font-weight: 500;
-	/*
-	if you're going to use webfonts, be sure to check your weights
-	http://css-tricks.com/watch-your-font-weight/
-	*/
+    font-family: $serif;
+    text-rendering: optimizelegibility;
+    font-weight: 300;
+    /*
+    if you're going to use webfonts, be sure to check your weights
+    http://css-tricks.com/watch-your-font-weight/
+    */
 
-	/* removing text decoration from all headline links */
-	a {
-		text-decoration: none;
-	}
+    /* removing text decoration from all headline links */
+    a {
+        text-decoration: none;
+    }
 }
 
 h1, .h1 {
-	font-family: $serif-bold-italic;
-	font-size: 2.5em;
-	line-height: 1.333em;
+    font-size: $h1;
+    margin-top: $h3;
+    margin-bottom: 0;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+    font-size: $h2;
+    margin-top: $h2;
+    margin-bottom: $sml;
 }
 
 h3, .h3 {
-	font-size: 1.125em;
-	font-family: $serif-bold;
+    font-size: $h3;
+    margin-top: $h2;
+    margin-bottom: $sml;
 }
 
 h4, .h4 {
-	font-size: 1.1em;
-	font-family: $serif-italic;
+    font-size: $h4;
+    margin-top: $h2;
+    margin-bottom: $sml;
 }
 
 h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
-	text-transform: uppercase;
-	font-family: $sans-serif-bold;
-	letter-spacing: 2px;
+    margin: $h3 0 $sml;
+    text-transform: uppercase;
+    font-family: $sans-serif;
+    letter-spacing: 2px;
+    font-size: $sml;
 }
 
-/*********************
-TYPOGRAPHY ROOT
-*********************/
-
-strong {
-	font-weight: normal;
-	font-family: $strong;
-}
-
-em {
-	font-style: normal;
-	font-family: $em;
-}
-
-ul, ol {
-	padding-left: 2em;
-}
-
-ul {
-	list-style-type: disc;
-}
-
-ol {
-	list-style-type: decimal;
-}
 
 
 /*********************
-FORM & INPUT SYTLES
+TYPOGRAPHY
 *********************/
 
-form {
-	margin: 0.75em 0;
-	font-size: 0.9em;
-	li {
-		list-style-type: none;
-		clear: both;
-		margin-bottom: 0.7335em;
-
-		label,
-		small {
-			display: none;
-		}
-	}
-
+blockquote {
+    font-size: $h3;
+    margin: $h4 0;
+    font-family: $serif;
+    padding-left: 2rem;
+    border-left: 1px solid $lightAccent;
+    margin-bottom: $h3;
+    font-style: italic;
 }
 
-input[type="text"],
-	input[type="email"],
-	input[type="url"],
-	textarea {
-		@include border-radius(3px);
-		font-family: $sans-serif;
-		padding: 3px 6px;
-		background: #efefef;
-		border: 2px solid #cecece;
-		line-height: 1.5em;
+p {
+    margin-bottom: $sml;
+}
 
-		&:focus {
-			background: #fefefe;
-			//border: $border-darker;
-		}
 
-		/* form validation */
-		&:invalid {
-			outline: none;
-			border-color: #fbc2c4;
-			background-color: #f6e7eb;
-			-webkit-box-shadow: none;
-			   -moz-box-shadow: none;
-			    -ms-box-shadow: none;
-					box-shadow: none;
-		}
-	}
-
-	input[type="text"],
-	input[type="email"],
-	input[type="url"] {
-		max-width: 400px;
-		min-width: 250px;
-	}
-
-	textarea {
-		resize: none;
-		width: 100%;
-		height: 150px;
-	}
 
 /*********************
-HEADER SYTLES
+HEADER STYLES
 *********************/
+
+
+.header {}
+
+    #logo {}
+
+
+.rotation {
+   @extend .dark-bkgd;
+   a, a:visited {
+    color: $lightAccent;
+   }
+}
+
+.site-header {
+    padding-bottom: 0;
+}
+
+.site-header, .site-footer {
+    border-top: 5px solid $medAccent;
+    border-bottom: 5px solid $lightAccent;
+    padding: $sml 0;
+}
 
 
 /*********************
 NAVIGATION STYLES
 *********************/
+
+// Ze Toggle menu
+
+.menu-link {
+
+    i {
+        font-size: $h2;
+        line-height: $h2;    
+        color: $lightAccent;
+    }
+
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+}
+
+
+.site-nav {
+    text-align: center;
+    margin-top: $sml/2;
+
+    @include transition(0.3s ease-out);
+    
+    .js & {
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    &.active {
+        max-height: 15em;
+    }
+
+    li {
+
+        &:first-child {
+            border-top: $accent-border;
+        }
+
+        a {
+            display: block;
+            font-size: $sml;
+            border-bottom: $accent-border;
+            padding: $sml;
+            text-align: center;    
+            text-transform: uppercase;
+            display: block;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+}
+
 
 
 /*********************
@@ -216,5 +247,56 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
+    clear: both;
 }
+
+.site-footer {
+    margin-top: $h1;
+    .wrap {
+        padding-top: $h2;
+    }
+
+   text-align: center;
+}
+
+    .social {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            padding-right: $default;
+            a {
+                border: none;
+            }
+            i {
+                font-size: $h2;
+            }
+        }
+    }
+
+    .colophon {
+        font-size: $sml;
+        padding-top: $sml;
+    }
+
+
+    /*
+    if you checked out the link above:
+    http://www.alistapart.com/articles/organizing-mobile/
+    you'll want to style the footer nav
+    a bit more in-depth. Remember to keep
+    it simple because you'll have to
+    override these styles for the desktop
+    view.
+    */
+    .footer-links {
+
+        ul {
+
+            li {}
+
+        }
+
+    } /* end .footer-links */
+
+

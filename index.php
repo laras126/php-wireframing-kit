@@ -2,55 +2,27 @@
 
         <header class="wrap clearfix animated bounceInDown">
             <h1 class="title">Lara's Website Starter Kit</h1>
-            <div class="fourcol first">
-                <h5>In sum:</h5>
-                <p>This is a hybrid of <a href="http://www.initializr.com/" target="blank">Intializr</a> and the style conventions used in the WP starter theme <a href="http://themble.com/bones/" taget="blank">Bones</a>. <strong>SASS only</strong>.</p>
-            </div>
-            <div class="fourcol">
-                <h5>Tools included:</h5>
-                <ul>
-                    <li>Fonts: <a href="http://www.fontsquirrel.com/fonts/open-sans" target="blank">Open Sans</a> <span class="amp">&amp;</span> <a href="http://www.fontsquirrel.com/fonts/Droid-Serif" target="blank">Droid Serif</a></li>
-                    <li>Icon font: <a href="http://fortawesome.github.com/Font-Awesome/" target="blank">Font Awesome</a></li>
-                    <li><a href="http://daneden.me/animate/">Animate.css</a></li>
-                    <li><a href="http://flexslider.woothemes.com/">WooThemes Flexslider</a></li>
-                </ul>
-            </div>
-            <div class="fourcol last">
-                <h5>It's on github!</h5>
-                <a class="blue-button" href="https://github.com/laras126/starter-kit/zipball/master">Download here</a>
-                <p>Hey, you could <a href="https://github.com/laras126/starter-kit" target="blank">fork</a> and made it your own!</p>
-            </div>
+            <h3>whats dis?</h3>
+            <p>A boilerplate for custom websites, created by Lara! It's annoying to have to keep putting together tools you use for every website. As I'm sure many designers do, I have made myself a starter kit that includes everything I use to start a site. Maybe other people would be interested, so here it is! Of course, this version will be better documented as time goes on.</p>
         </header>
 
         <div class="main wrap clearfix animated bounceInUp">
+            <h5>In sum:</h5>
+            <p>This is a hybrid of <a href="http://www.initializr.com/" target="blank">Intializr</a> and the style conventions used in the WP starter theme <a href="http://themble.com/bones/" taget="blank">Bones</a>. <strong>SASS only</strong>.</p>
+        
+            <h5>Tools included:</h5>
+            <ul>
+                <li>Icon font: <a href="http://fortawesome.github.com/Font-Awesome/" target="blank">Font Awesome</a></li>
+                <li><a href="http://daneden.me/animate/">Animate.css</a></li>
+                <li><a href="http://24ways.org/2013/grunt-is-not-weird-and-hard/">Grunt</a></li>
+            </ul>
+    
+            <h5><span class="h3"><i class="fa fa-github"></i></span>&nbsp;It's on Github!</h5>
+            <a class="blue-button" href="https://github.com/laras126/starter-kit/zipball/master">Download here</a>
+            <p>Hey, you could <a href="https://github.com/laras126/starter-kit" target="blank">fork</a> and made it your own!</p>
 
-            <section class="slider">
-                <div class="flexslider sixcol first">
-                  <ul class="slides">
-                    <li>
-                        <img src="images/flexslider/kitchen_adventurer_cheesecake_brownie.jpg" />
-                        </li>
-                        <li>
-                        <img src="images/flexslider/kitchen_adventurer_lemon.jpg" />
-                        </li>
-                        <li>
-                        <img src="images/flexslider/kitchen_adventurer_donut.jpg" />
-                        </li>
-                        <li>
-                        <img src="images/flexslider/kitchen_adventurer_caramel.jpg" />
-                        </li>
-                  </ul>
-                </div>
-              </section>
-
-            <div class="sixcol last">
-                <h3>whats dis?</h3>
-                <p>A boilerplate for custom websites, created by Lara! It's annoying to have to keep putting together tools you use for every website. As I'm sure many designers do, I have made myself a starter kit that includes everything I use to start a site. Maybe other people would be interested, so here it is! Of course, this version will be better documented as time goes on.</p>
-            </div>
-
-            <div class="ninecol first">
-
-                <article class="sixcol first">
+            <div class="clearfix">
+                <div class="sixcol">
                     <header>
                         <h2>About Headings</h2>
                         <p>One thing Bones does that I like a lot is adding <code>h1-h5</code> <em>classses</em> so you can style arbitrary text. All of these are <code>p</code> tags with those classes:</p>
@@ -66,9 +38,9 @@
                         <h4>article footer h4</h4>
                         <p>You could argue that this violates the "don't use <code>.blue</code> for the style blue", but I think this saves a lot of trouble styling individual elements. but what do i know!</p>
                     </footer>
-                </article>
+                </div>
 
-                 <article class="sixcol last">
+                 <div class="sixcol last">
                     <header>
                         <h2>article header h2</h2>
                         <p>High life squid consequat laborum, keytar dolore retro. Pork belly etsy gluten-free american apparel. Veniam velit ad, mixtape fingerstache minim dreamcatcher chillwave craft beer etsy biodiesel enim.</p>
@@ -89,25 +61,8 @@
                             <li>Ampersand: <span class="amp">&amp;</span></li>
                         </ol>
                     </section>
-                </article>
-
-            </div> <!-- .main -->
-
-
-            <aside class="threecol last">
-                <h3 class="h5">Icon font! WOWO!</h3>
-                <ul>
-                    <li class="icon-camera-retro">a camera!</li>
-                    <li class="icon-camera-retro icon-large">a LARGE camera!</li>
-                    <li class="icon-magic">it's magic!</li>
-                    <li class="icon-magic icon-large">it's LARGE magic!</li>
-                    <li class="icon-leaf">a leaf!</li>
-                    <li class="icon-leaf icon-large">a LARGE leaf!</li>
-                </ul>
-                <p>Here's a HUGE <code>.icon-beaker</code>! <code>font-size: 150px</code>!</p>
-                <div style="font-size: 150px" class="icon-beaker">
                 </div>
-            </aside>
+            </div>
 
         </div> <!-- .main -->
 

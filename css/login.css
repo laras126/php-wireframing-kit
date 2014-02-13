@@ -1,11 +1,11 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: Login Stylesheet
 
-This stylesheet is loaded (if admin.php is setup in your 
-functions file) on the login page. This way you can style 
+This stylesheet is loaded (if admin.php is setup in your
+functions file) on the login page. This way you can style
 the login page. It won't affect any other page, admin or front-end.
 
 For more info, check out the codex:
@@ -34,13 +34,7 @@ form {
   font-weight: normal;
   background: white;
   border: 1px solid #E5E5E5;
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: none;
-  -khtml-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none; }
 
 body form .input {
@@ -55,8 +49,6 @@ body form .input {
   border: 1px solid #E5E5E5;
   background: #FBFBFB;
   outline: none;
-  -webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
-  -moz-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
   box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2); }
 
 /*

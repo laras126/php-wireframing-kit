@@ -1,59 +1,103 @@
+/******************************************************************
 
-@import "compass/reset";
-@import "compass/css3";
-@import "compass/utilities";
+Stylesheet: Settings Stylesheet
+
+Like, for colors n'at.
+
+******************************************************************/
+
+// Layout
+
+$maxPageWidth: 		43em;
 
 
-// Units
-$h1: 4.7rem;
-$h2: 2.9rem;
-$h3: 2.3rem;
-$sml: 1.4rem;
-$default: 2rem;
-
-//  Colors
-
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
 
 $alert-yellow:      #ebe16f;
 $alert-red:         #fbe3e4;
 $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
-$orange: 		#a94d25;
+$white:  			#ffffff;
+$black: 			#231f20;
+$grey: 				lighten($black, 10%);
 
-$dark-blue: 	#237fa9;
-$light-blue: 	lighten(desaturate($dark-blue, 30%), 25%);
+$orange: 			#a94d25;
 
-$white:  		#f4f7f9;
-$black: 		#231f20;
-$grey: 			lighten($black, 10%);
+$dark-blue: 		#237fa9;
+$light-blue: 		lighten(desaturate($dark-blue, 30%), 25%);
 
-$link-color: 		$alert-yellow;
-$link-hover: 		$orange;
+$linkClr: 			$dark-blue;
+$linkHoverClr: 		darken($linkClr, 9%);
+$linkActiveClr: 	darken($linkClr, 20%);
 
-$light-txt: 	$white;
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
 
-$link-light: 	$light-blue;
+$mainBkgdClr: 		$white;
+$mainFontClr: 		$black;
 
-$link-color: 	$link-light;
-$link-hover: 	$orange;
+$lightAccent: 		#f4f7f9;
+$medAccent: 		darken($white, 10%);
+$darkAccent: 		$light-blue;
 
-$light-accent: 	$light-blue;
-// $medium-accent: 	$green;
-$dark-accent: 	$dark-blue;
+$btnColor: 			$light-blue;
 
-// $btn-color: 		$dark-green;
+$lightFont: 		darken($lightAccent, 20%);
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+// Rem Units
+// http://gregrickaby.com/using-the-golden-ratio-and-rems/
+
+$default:  			1.8rem;
+$line-height-base: 	1.5;
+$sml:  				$default*0.8;
+
+$h1:  				$default*2.6;
+$h2:  				$default*1.6;
+$h3:  				$default*1.3;
+$h4:  				$default;
+$h5:  				$sml;
+
+$sans-serif:        "Verdana";
+$serif:             "Georgia";
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 500;
+}
 
 
+/*********************
+UTILITIES
+*********************/
+
+$accent-border: 	1px dotted $medAccent;
+
+
+/*********************
+GRID
+*********************/
 
 // Susy settings
-// TODO: incorporate modular scale here
 
 $total-columns  : 6;             // a 12-column grid
 $column-width   : 4em;            // each column is 4em wide
-$gutter-width   : 2em;            // 1em gutters between columns
+$gutter-width   : 1em;            // 1em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 $container-style: fluid;
 
-$break 			: 38em;
 
