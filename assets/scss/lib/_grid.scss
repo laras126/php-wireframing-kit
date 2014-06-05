@@ -19,8 +19,6 @@
 
 @include at-breakpoint($medium 12) {
   	
-  	.thumb { @include isolate-grid(4); }
-
   	.site-info { @include span-columns(4); }
 
 	.site-nav { @include span-columns(8 omega); }

@@ -213,11 +213,7 @@ NAVIGATION STYLES
     }
 
     li {
-
-        &:first-child {
-            border-top: $accent-border;
-        }
-
+        
         a {
             display: block;
             font-size: $sml;

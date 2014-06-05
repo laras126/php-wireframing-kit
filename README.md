@@ -6,14 +6,16 @@ SASS only.
 
 Other tools included:
 
-font awesome, the icon font:
+//font awesome, the icon font:
 http://fortawesome.github.com/Font-Awesome/
 
 animate.css:
 http://daneden.me/animate/
 
 
+// iconic for fonts
 
+// jeet.gs for grid
 
 I recommend these as you design:
 

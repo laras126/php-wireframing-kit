@@ -7,79 +7,88 @@ module.exports = function(grunt) {
         concat: {   
             dist: {
                 src: [
-                    'js/libs/*.js',
-                    'js/*.js'
+                    'assets/js/libs/*.js',
+                    'assets/js/*.js',
+                    'assets/js/_*.js'
                 ],
-                dest: 'js/build/production.js',
+                dest: 'assets/js/build/production.js',
             }
         },
 
         uglify: {
             build: {
-                src: 'js/build/production.js',
-                dest: 'js/build/production.min.js'
+                src: 'assets/js/build/production.js',
+                dest: 'assets/js/build/production.min.js'
             }
         },
 
-        compass: {
-            dist: {
-                options: {
-                    sassDir: 'scss',
-                    cssDir: 'css',
-                    require: 'susy',
-                    outputStyle: 'compressed'
-                }
-            }
-        },
-
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: 'images/',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'images/build/'
-                }]
-            }
-        },
-
-        svgmin: {        
-
-            options: {                                plugins: [
-                  { removeViewBox: false },
-                  { removeUselessStrokeAndFill: false }
-                ]
+        sass: {
+          dist: {
+            options: {
+              style: 'compressed',
+              compass: true,
+              // Source maps are available, but require Sass 3.3.0 to be installed
+              // https://github.com/gruntassets/js/grunt-contrib-sass#sourcemap
+              sourcemap: false,
+              require: 'breakpoint-slicer'
             },
+            files: {
+              'assets/css/main.min.css': [
+                'assets/scss/main.scss'
+              ]
+            }
+          }
+        },
 
-            dist: {                                         
-                files: {                                    
-                    // I am a tard and can't figure out file paths so am 
-                    // just listing the files since there aren't many of them
-                   'images/build/site/svg/we-fish.svg': 'images/site/svg/we-fish.svg',
-                   'images/build/site/svg/you-fish.svg': 'images/site/svg/you-fish.svg',
-                   'images/build/site/svg/me-fish.svg': 'images/site/svg/me-fish.svg',
-                   'images/build/site/svg/deliver-fish.svg': 'images/site/svg/deliver-fish.svg',
-                }
-
+        svgstore: {
+          options: {
+            prefix : 'shape-', // This will prefix each <g> ID
+          },
+          default : {
+              files: {
+                'assets/img/processed/svg-defs.svg': ['img/svgs/*.svg'],
+              }
             }
         },
+
+        livereload: {
+            // Browser live reloading
+            // https://github.com/gruntassets/js/grunt-contrib-watch#live-reloading
+            options: {
+              livereload: true
+            },
+            files: [
+              'assets/css/main.min.css',
+              'assets/js/main.min.js',
+              'templates/*.php',
+              '*.php'
+            ]
+          },
 
         watch: {
             scripts: {
-                files: ['js/*.js', '**/*.scss'],
-                tasks: ['concat', 'uglify', 'compass'],
+                files: ['assets/js/*.js', 'assets/**/*.scss'],
+                tasks: ['concat', 'uglify', 'sass', 'svgstore'],
                 options: {
                     spawn: false,
                 },
             },
 
-            css: {
-                files: ['css/*.scss'],
+            sass: {
+                files: ['assets/css/*.scss'],
+                files: ['assets/css/*/*.scss'],
+                files: ['assets/css/*/*.scss'],
                 tasks: ['compass'],
                 options: {
                     spawn: false,
                 }
-            }
+            },
+
+            svgstore: {
+                files: [
+                  'assets/img/svgs/*.svg'
+                ]
+              }
         }
 
     
@@ -87,14 +96,20 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify' );
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-svgstore');
     
-    grunt.registerTask('default', ['svgmin']);
-
-    
+    // Register tasks
+      grunt.registerTask('default', [
+        'sass',
+        'uglify'
+      ]);
+      grunt.registerTask('dev', [
+        'watch'
+      ]);
 
 };
