@@ -1,0 +1,66 @@
+// // Here are some various, helpful shortcuts!
+
+// .callout {
+// 	@extend .text-center;
+// }
+
+// .greeting {
+// 	font-style: italic;
+// }
+
+// .obscure-a {
+//     a {
+//         @include unstyled-link;
+//     }
+// }
+
+// .text-center {
+// 	text-align: center;
+// }
+
+// .hlite-db {
+// 	color: $medAccent;
+// }
+
+// .special {
+// 	color: $darkAccent;	
+	
+//     .callout-quote & {
+//         font-family: $sans-serif;
+//         color: $medAccent;
+//     }
+// }
+
+// .special-dark {
+//     color: $black;  
+// }
+
+// .fig-large {
+//     width: 116%;
+//     margin-left: -8%;
+    
+//     img {
+//         width: 100%;
+//         display: block;
+//     }
+
+//     figcaption {
+//         text-align: center;
+//         font-size: $sml;
+//         padding: $sml/2;
+//         background-color: $lightAccent;
+//     }
+// }
+
+
+// .dark-button {
+//     @include button($dark-blue);    
+//     // TODO: is this necessary? Sheesh.
+//     &:hover, 
+//     &:focus,
+//     &:visited, 
+//     &:visited:hover, 
+//     &:visited:focus {
+//         color: $white;
+//     }
+// }

@@ -1,0 +1,8 @@
+* {
+	@include box-sizing(border-box);
+}
+	
+.contain {
+	@include center($screen-lg);
+}
+

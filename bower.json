@@ -1,0 +1,25 @@
+{
+  "name": "Starter Kit",
+  "version": "1.0",
+  "homepage": "https://github.com/laras126/starter-kit",
+  "authors": [
+    "Lara Schenck"
+  ],
+  "description": "A quickie framework for wireframing.",
+  "main": "index.php",
+  "keywords": [
+    "framework",
+    "wireframing"
+  ],
+  "license": "WTFPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.scss": "~2.2.0+normalize.2.1.3"
+  }
+}
