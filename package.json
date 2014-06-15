@@ -1,13 +1,27 @@
 {
-  "name": "notlaura-theme",
-  "version": "0.1.0",
+  "name": "starter-kit",
+  "author": "Lara Schenck <lara@notlaura.com>",
+  "version": "0.4.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/laras126/starter-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/laras126/starter-kit/issues"
+  },
+  "licenses": [
+    {
+      "type": "WTFPL",
+      "url": "http://sam.zoy.org/wtfpl/"
+    }
+  ],
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "~0.4.5",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-uglify": "~0.3.0",
-    "grunt-contrib-imagemin": "~0.5.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-sass": "~0.6.0",
-    "grunt-contrib-compass": "~0.7.0"
+    "grunt-svgstore": "0.2.2",
+    "grunt-contrib-jshint": "~0.6.4"
   }
 }

@@ -1,12 +1,10 @@
 <?php include('include/header.php'); ?>
 
-<header class="wrap clearfix">
-</header>
+        <main class="main" role="main">
+            <div class="content contain">
+                
 
-<div class="main wrap clearfix">
-</div> <!-- .main -->
-
-<footer class="wrap clearfix">
-</footer> <!-- .footer -->
+            </div> <!-- /.contain -->
+        </main> <!-- /.main -->
 
 <?php include('include/footer.php'); ?>
