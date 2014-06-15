@@ -1,25 +1,8 @@
-
-@include border-box-sizing;
-
-// Container
-
-.wrap {
-	@include container($total-columns);
-    max-width: $maxPageWidth;
-    margin: 0 auto;
+* {
+	@include box-sizing(border-box);
+}
+	
+.contain {
+	@include center($screen-lg);
 }
 
-.sixcol { @include span-columns(3);	}
-.sixcol.last { @include omega; }
-
-
-@include at-breakpoint($small 6) {
-	.thumb { @include isolate-grid(3); }
-}
-
-@include at-breakpoint($medium 12) {
-  	
-  	.site-info { @include span-columns(4); }
-
-	.site-nav { @include span-columns(8 omega); }
-}
