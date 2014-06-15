@@ -44,7 +44,7 @@ module.exports = function(grunt) {
               require: 'breakpoint-slicer'
             },
             files: {
-              'assets/css/main.min.css': [
+                'assets/css/main.min.css': [
                 'assets/scss/main.scss'
               ]
             }
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
           },
           default : {
               files: {
-                'assets/img/processed/svg-defs.svg': ['img/svgs/*.svg'],
+                'assets/img/processed/svg-defs.svg': ['assets/img/svgs/*.svg'],
               }
             }
         },
@@ -94,6 +94,20 @@ module.exports = function(grunt) {
                     spawn: false,
                 }
             },
+
+            livereload: {
+		        // Browser live reloading
+		        // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
+		        options: {
+		          livereload: true
+		        },
+		        files: [
+		          'assets/css/main.min.css',
+		          'assets/js/build/production.min.js',
+		          'include/*.php',
+		          '*.php'
+		        ]
+		    },
 
             svgstore: {
                 files: [
