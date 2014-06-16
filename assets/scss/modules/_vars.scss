@@ -1,7 +1,8 @@
-$screen-sm: 		400px;
-$screen-md: 		600px;
-$screen-lg: 		800px;
+$screen-sm: 		481px;
+$screen-md: 		768px;
+$screen-lg: 		960px;
 
+$slicer-breakpoints: 0 $screen-sm $screen-md $screen-lg;
 
 // Colors
 
