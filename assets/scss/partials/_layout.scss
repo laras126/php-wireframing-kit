@@ -78,7 +78,7 @@ figcaption {
 .gallery__item {
 
 	@include from(2) {
-		@include col(1/2, $cycle:2);	
+		@include col(1/2, $cycle:2);
 	}
 
 	@include from(3) {
