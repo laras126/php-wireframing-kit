@@ -8,3 +8,4 @@ include('include/header.php'); ?>
     <?php printGallery('sky', 'Sky Gallery'); ?>
 
 <?php include('include/footer.php'); ?>
+

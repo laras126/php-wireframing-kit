@@ -5,14 +5,14 @@
 	// ----
 
 	// Function to print images
-	function printGalleryImage($path, $alt) { ?>
+	function printGalleryItem($path, $alt) { ?>
 		<div class="gallery__item">
 			<img src="<?php echo $path; ?>" alt="<?php echo $alt; ?> ">
 		</div>
 	<?php }
 
 
-	// Loop through image directory and printImage markup for each
+	// Loop through image directory and printGalleryItem markup for each
 	// Reference: 
 	// http://www.flydigital.com.au/blog/2011/01/20/how-to-loop-through-files-in-a-folder-in-php-the-quick-way/
 
@@ -20,7 +20,7 @@
 		echo '<div class="gallery">';
 		$fdir = 'assets/img/galleries/' . $dir . '/*';
 		foreach(glob($fdir) as $img_path) {  
-			printGalleryImage($img_path, $alt);
+			printGalleryItem($img_path, $alt);
 		}
 		echo '</div>';
 	}
@@ -79,10 +79,14 @@
 	<?php }
 
 
+
+
+
 	// ----
 	// Footer
 	// ----
 
+	// Footer widget, duh
 	function printWidget($title, $content) { ?>
 		<div class="widget__content col-4">
 			<h5><?php echo $title ?></h5>
