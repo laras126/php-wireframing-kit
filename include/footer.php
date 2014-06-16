@@ -4,6 +4,12 @@
             
          </main> <!-- /.main -->
 
+            <?php if( $contain ) { ?>
+                </div> <!-- /.contain -->
+            <?php } ?>
+
+        </main> <!-- /.main -->
+        
         <footer class="footer">
             <div class="contain">
                 <h3>Connect with the sky...</h3>

@@ -1,7 +1,7 @@
 <?php 
 $contain = true;
 include('include/header.php'); ?>
-                
+   
     <?php printCallout('The sky is the best.', 'And we are thinking about making an app for it.'); ?> 
 
 	<div class="col-12">
