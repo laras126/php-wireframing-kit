@@ -35,3 +35,8 @@
                 <nav role="navigation" class="nav nav--main"></nav>
             </div>
         </header> <!-- /.header -->
+
+        <main class="main" role="main">
+            <?php if( $contain ) { ?>
+                <div class="contain">
+            <?php } ?>

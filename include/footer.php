@@ -1,8 +1,14 @@
 
+            <?php if( $contain ) { ?>
+                </div> <!-- /.contain -->
+            <?php } ?>
+
+        </main> <!-- /.main -->
+        
         <footer class="footer">
             <div class="contain">
-                <h3>footer</h3>
-                <p>Some copyright information for yo mama!</p>    
+                <h3>Footer</h3>
+                <p>Here's some info that's on every footer ever.</p>    
             </div>
         </footer>
 
