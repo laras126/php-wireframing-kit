@@ -25,13 +25,24 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <?php //include_once("assets/img/svgs/arrow-down.svg"); ?>
-
-
         <header class="header" role="banner">
             <div class="contain">
 
-                <h1 class="title">Lara's Website Starter Kit</h1>
-                <nav role="navigation" class="nav nav--main"></nav>
+                <div class="col-4">
+                    <h1 class="title">The Sky</h1>    
+                </div>
+                <nav role="navigation" class="nav nav--main col-8">
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About Us</li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <li><a href="updates.php">Updates</a></li>
+                    </ul>
+                </nav>
             </div>
         </header> <!-- /.header -->
+
+        <main class="main" role="main">
+            <?php if( $contain ) { ?>
+                <div class="contain">
+            <?php } ?>
