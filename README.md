@@ -1,27 +1,13 @@
-A boilerplate for custom websites, created by Lara! It's annoying to have to keep putting together tools you use for every website. As I'm sure many designers do, I have made myself a starter kit that includes everything I use to start a site. Maybe other people would be interested, so here it is! Of course, this version will be better documented as time goes on.
+A boilerplate for wireframing, created by Lara! Maybe you will like it too.
 
-In sum:
-This is a hybrid of Intializr and the style conventions used in the WP theme Bones.
-SASS only.
+(It's not really finished, like, SVG sprites aren't working)
 
-Other tools included:
-
-//font awesome, the icon font:
-http://fortawesome.github.com/Font-Awesome/
-
-animate.css:
-http://daneden.me/animate/
-
-
-// iconic for fonts
-
-// jeet.gs for grid
-
-I recommend these as you design:
-
-Style tiles:
-http://styletil.es/
-
-Hipster ipsum: Artesinal Filler text
-http://hipsteripsum.me
-
+Included tools:
+* Sass
+* Grunt
+* Bower
+* SVG sprites
+* Jeet.gs for grids
+* Breakpoint Slicer for breakpoints
+* Normalize
+* Probably some other stuff

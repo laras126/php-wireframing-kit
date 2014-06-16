@@ -79,7 +79,9 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['assets/js/*.js', 'assets/**/*.scss'],
-                tasks: ['concat', 'uglify', 'sass', 'svgstore'],
+                // Add 'svgstore' here when the include issue is figured out
+                // http://css-tricks.com/svg-sprites-use-better-icon-fonts/
+                tasks: ['concat', 'uglify', 'sass'],
                 options: {
                     spawn: false,
                 },
