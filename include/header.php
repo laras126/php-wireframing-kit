@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Lara's Starter Kit</title>
+        <title>The Sky's Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 		
