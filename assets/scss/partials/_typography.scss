@@ -1,0 +1,56 @@
+body {
+	font-family: $sans-serif;
+}
+
+a, a:visited {
+	color: $link-color;
+
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+	&:active {
+		
+	}
+
+	// mobile tap color 
+	&:link {
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+// This needs much more thought...
+
+// h1, h2, h3, h4, h5, h6 {
+// 	line-height: $line-height-base;
+// }
+
+// h1 {
+// 	font-size: $h1;
+// 	margin-bottom: $h2;
+// }
+
+// h2 {
+// 	font-size: $h2;
+// 	margin-bottom: $h3;
+// }
+
+// h3 {
+// 	font-size: $h3;
+// 	margin-bottom: $h4;
+// }
+
+// h4 {
+// 	font-size: $h4;
+// 	margin-bottom: $base;
+// }
+
+// h5 {
+// 	font-size: $h5;
+// 	margin-bottom: $base;
+// }
+
+// h6 {
+// 	font-size: $sml;
+// 	margin-bottom: $base;
+// }
