@@ -36,8 +36,8 @@
 	function printCallout($heading, $tagline) { ?>
         <header class="callout">
         	<div class="col-12">
-        		<p class="headline"><?php echo $heading ?></p>
-        		<p class="tagline"><?php echo $tagline; ?></p>
+        		<h1 class="headline"><?php echo $heading ?></h1>
+        		<h2 class="tagline"><?php echo $tagline; ?></h2>
         	</div>
         </header>
 	<?php }
@@ -75,7 +75,6 @@
 				<p><?php echo $excerpt; ?></p>	
 			</div>
 		</article>
-
 	<?php }
 
 
