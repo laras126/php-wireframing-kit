@@ -7,18 +7,3 @@
 	margin: 0 auto;
 }
 
-
-
-// ----
-// Utility grid
-// ----
-
-$grid-cols: 12;
-
-@for $i from 1 through $grid-cols {
-  	.col-#{$i} { 
-  		@include from(2) {
-  			@include col($i/$grid-cols);	
-  		}
-  	}
-}

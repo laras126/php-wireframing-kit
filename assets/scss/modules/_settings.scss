@@ -2,9 +2,9 @@
 // Screen sizes
 // ----
 
-$screen-sm: 		400px;
-$screen-md: 		600px;
-$screen-lg: 		800px;
+$screen-sm: 		481px;
+$screen-md: 		768px;
+$screen-lg: 		960px;
 
 $slicer-breakpoints: 0 $screen-sm $screen-md $screen-lg;
 
@@ -27,14 +27,15 @@ $green: 			#54B778;
 // http://thesassway.com/beginner/variable-naming
 // http://sachagreif.com/sass-color-variables/
 
-// Note that I put 0 thought into this color scheme
+// Note that I put ZERO thought into these color choices
+// This is SO fun though: http://theolabrothers.com/sip/
 
 $light-accent: 		lighten($blue, 20%);	
 $med-accent: 		$blue;
 $dark-accent: 		darken($blue, 20%);		
 
-$link-color:		$green;
-$link-hover: 		$blue;
+$link-color:		$blue;
+$link-hover: 		$dark-accent;
 
 
 
@@ -47,7 +48,7 @@ $link-hover: 		$blue;
 
 $contain: 			1rem;
 $base:  			1em;
-$line-height-base: 	1.3;
+$line-height-base: 	1.4;
 $sml:  				$base*0.8;
 
 $h1:  				$base*2.8;
@@ -57,5 +58,5 @@ $h4:  				$base*1.2;
 $h5:  				$base;
 $h6:  				$sml;
 
-$sans-serif: 		'Lucida Sans', Helvetica, sans-serif;
+$sans-serif: 		'Verdana', Helvetica, sans-serif;
 $serif:             'Georgia', serif;
