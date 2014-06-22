@@ -1,9 +1,3 @@
-        <?php if( $contain == true ) { ?>
-            </div> <!-- /.contain -->
-        <?php } ?>
-            
-         </main> <!-- /.main -->
-
             <?php if( $contain ) { ?>
                 </div> <!-- /.contain -->
             <?php } ?>
@@ -32,8 +26,11 @@
                     '); ?>
 
                     <?php printWidget('Receive Sky Updates', '
-                        <input type="email" placeholder="Your email">
-                        <input type="submit" value="Sign up!">
+                    	<div class="col-12">
+                        	<small>We promise not to spam you unless there is a meteor shower!</small>
+                        </div>
+                        <input type="email" placeholder="Your email" class="col-8">
+                        <input type="submit" value="Sign up!" class="col-4">
                     '); ?>
                 </div>
             </div>
