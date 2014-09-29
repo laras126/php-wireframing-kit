@@ -1,25 +1,24 @@
 {
   "name": "Starter Kit",
-  "version": "1.0",
+  "version": "1",
   "homepage": "https://github.com/laras126/starter-kit",
   "authors": [
-    "Lara Schenck"
+    "laras126 <laras126@gmail.com>"
   ],
-  "description": "A quickie framework for wireframing.",
+  "description": "Here's a nice starter kit for wireframing in da browser with a little PHP and a lotta Sass. You can totally move it to CMS of choice afterwards.",
   "main": "index.php",
   "keywords": [
-    "framework",
-    "wireframing"
+    "wireframing",
+    "design",
+    "boilerplate",
+    "prototype"
   ],
-  "license": "WTFPL",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "normalize.scss": "~2.2.0+normalize.2.1.3"
-  }
+  ]
 }

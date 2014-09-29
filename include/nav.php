@@ -1,14 +1,9 @@
 <nav>
 	<ul>
-		<li>Home</li>
-		<li>Sponsors</li>
-		<li>Team</li>
-		<li>Events</li>
-		<li>Buses</li>
-		<li>TV</li>
-		<li>About</li>
-		<li>Blog</li>
-		<li>Community</li>
-		<li>Press</li>
+		<li>Link</li>
+		<li>Link</li>
+		<li>Link</li>
+		<li>Link</li>
+		<li>Link</li>
 	</ul>
 </nav>

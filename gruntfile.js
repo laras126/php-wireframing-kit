@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           all: [
             'Gruntfile.js',
             'assets/js/*.js',
-            '!assets/js/build/production.min.js'
+            '!assets/js/build/scripts.js'
           ]
         },
 
@@ -22,21 +22,14 @@ module.exports = function(grunt) {
                     'assets/js/*.js',
                     'assets/js/_*.js'
                 ],
-                dest: 'assets/js/build/production.js',
-            }
-        },
-
-        uglify: {
-            build: {
-                src: 'assets/js/build/production.js',
-                dest: 'assets/js/build/production.min.js'
+                dest: 'assets/js/build/scripts.js',
             }
         },
 
         sass: {
           dist: {
             options: {
-              style: 'compressed',
+              style: 'expanded',
               compass: true,
               // Source maps are available, but require Sass 3.3.0 to be installed
               // https://github.com/gruntassets/js/grunt-contrib-sass#sourcemap
@@ -44,7 +37,7 @@ module.exports = function(grunt) {
               require: 'breakpoint-slicer'
             },
             files: {
-                'assets/css/main.min.css': [
+                'assets/css/main.css': [
                 'assets/scss/main.scss'
               ]
             }
@@ -69,19 +62,18 @@ module.exports = function(grunt) {
               livereload: true
             },
             files: [
-              'assets/css/main.min.css',
-              'assets/js/main.min.js',
-              'templates/*.php',
+              'assets/scss/*/*.scss',
+              'assets/js/main.js',
               '*.php'
             ]
           },
 
         watch: {
             scripts: {
-                files: ['assets/js/*.js', 'assets/**/*.scss'],
+                files: ['assets/js/*.js', 'assets/**/*.scss', 'Gruntfile.js'],
                 // Add 'svgstore' here when the include issue is figured out
                 // http://css-tricks.com/svg-sprites-use-better-icon-fonts/
-                tasks: ['concat', 'uglify', 'sass'],
+                tasks: ['concat', 'sass'],
                 options: {
                     spawn: false,
                 },
@@ -89,7 +81,6 @@ module.exports = function(grunt) {
 
             sass: {
                 files: ['assets/css/*.scss'],
-                files: ['assets/css/*/*.scss'],
                 files: ['assets/css/*/*.scss'],
                 tasks: ['compass'],
                 options: {
@@ -105,7 +96,7 @@ module.exports = function(grunt) {
 		        },
 		        files: [
 		          'assets/css/main.min.css',
-		          'assets/js/build/production.min.js',
+		          'assets/js/build/scripts.min.js',
 		          'include/*.php',
 		          '*.php'
 		        ]
@@ -124,7 +115,6 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-uglify' );
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-svgstore');
@@ -132,7 +122,7 @@ module.exports = function(grunt) {
     // Register tasks
       grunt.registerTask('default', [
         'sass',
-        'uglify'
+        'concat'
       ]);
       grunt.registerTask('dev', [
         'watch'

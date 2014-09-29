@@ -2,9 +2,12 @@
 // Screen sizes
 // ----
 
-$screen-sm: 		400px;
-$screen-md: 		600px;
-$screen-lg: 		800px;
+// Adjust these based on your designs!
+// http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/
+
+$screen-sm: 		25em;
+$screen-md: 		50em;
+$screen-lg: 		75em;
 
 $slicer-breakpoints: 0 $screen-sm $screen-md $screen-lg;
 
@@ -45,6 +48,9 @@ $link-hover: 		$blue;
 // Rem Units
 // http://gregrickaby.com/using-the-golden-ratio-and-rems/
 
+// Also fun to use these units for margins, padding, and other spacing
+// Yes, fun!
+
 $contain: 			1rem;
 $base:  			1em;
 $line-height-base: 	1.3;
@@ -59,3 +65,4 @@ $h6:  				$sml;
 
 $sans-serif: 		'Lucida Sans', Helvetica, sans-serif;
 $serif:             'Georgia', serif;
+

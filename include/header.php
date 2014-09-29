@@ -30,8 +30,7 @@
 
         <header class="header" role="banner">
             <div class="contain">
-
-                <h1 class="title">Lara's Website Starter Kit</h1>
+                <h1 class="title">Website Starter Kit</h1>
                 <nav role="navigation" class="nav nav--main"></nav>
             </div>
         </header> <!-- /.header -->
