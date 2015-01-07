@@ -1,29 +1,16 @@
-// ----
-// Main Layout
-// ----
 
-* {
-	@include box-sizing(border-box);
-}
-	
+// ---
+// Layout
+// ---
+
+// Again, mobile first please! I don't want to see any kind of @media(max-width: poop) in here. 
+
+// Note that you can totally integrate layout styles into your _content.scss instead, but I like to separate those styles. Personal preference.
+
+// Read up on some grids here:
+// http://web-design-weekly.com/2014/04/06/grid-frameworks-sass/
+
 .contain {
-	@include center($screen-lg);
-}
-
-
-
-// ----
-// Utility grid
-// ----
-
-// Here's a super simple grid to use for prototyping and if you are okay with some non-semantic-ish classes.
-
-$grid-cols: 12;
-
-@for $i from 1 through $grid-cols {
-  	.col-#{$i} { 
-  		@include from(2) {
-  			@include col($i/$grid-cols);	
-  		}
-  	}
+	max-width: $screen-md;
+	margin: $h2 auto;
 }

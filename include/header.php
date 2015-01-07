@@ -14,7 +14,7 @@
 		
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-        <link rel="stylesheet" href="assets/css/main.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
 
         <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
