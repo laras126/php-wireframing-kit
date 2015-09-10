@@ -1,6 +1,4 @@
-<?php 
-$contain = true;
-include('include/header.php'); ?>
+<?php include('include/header.php'); ?>
 
 <h1>Shalom!</h1>
 <p>This is boilerplate for wireframing created by me, Lara (<a href="http://notlaura.com">notlaura</a>). Maybe you will like it too!</p> 

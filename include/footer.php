@@ -1,8 +1,3 @@
-
-            <?php if( $contain ) { ?>
-                </div> <!-- /.contain -->
-            <?php } ?>
-
         </main> <!-- /.main -->
         
         <footer class="footer">

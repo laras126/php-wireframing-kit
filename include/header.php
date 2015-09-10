@@ -36,6 +36,3 @@
         </header> <!-- /.header -->
 
         <main class="main" role="main">
-            <?php if( $contain ) { ?>
-                <div class="contain">
-            <?php } ?>
