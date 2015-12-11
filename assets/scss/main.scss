@@ -9,16 +9,7 @@
 
 
 //--
-// 1. Import the Compass functions we will use (similar in theory to including jQuery)
-// 	  Here we are including all of Compass, but you can import specific sets of functions, like compass/css3 or compass/lists
-//--
-
-@import "compass";
-
-
-
-//--
-// 2. Import vendor (third party code). 
+// 1. Import vendor (third party code). 
 // 	  We do this first because we may override some of these and they are not dependent on our code
 //--
 
@@ -28,7 +19,7 @@
 
 
 //--
-// 3. Import our variables and mixins. 
+// 2. Import our variables and mixins. 
 //    This code doesn't actually export anything, rather, the contents are called in our styles (coming next).
 //--
 
@@ -39,7 +30,7 @@
 
 
 //--
-// 4. Import our actual styles.
+// 3. Import our actual styles.
 //    See the files for descriptions of their contents.
 //--
 
@@ -51,7 +42,7 @@
 
 
 //--
-// 5. Import shameful styles.
+// 4. Import shameful styles.
 //    Uh oh, what's this? A technique developed by the ingenious Harry Roberts (http://j.mp/shamecss), the _shame.scss contains all of the styles you know you shouldn't be doing. This might include !importants, hacky overrides, or verbose styles you know can be done differenty. The idea is that you have all of them in one place to address later.
 //--
 

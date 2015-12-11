@@ -3198,7 +3198,15 @@ small {
   font-size: 0.8rem;
 }
 
-.contain {
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
   max-width: 48em;
   margin: 2.2rem auto;
 }

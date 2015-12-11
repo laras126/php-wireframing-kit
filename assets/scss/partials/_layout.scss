@@ -10,7 +10,15 @@
 // Read up on some grids here:
 // http://web-design-weekly.com/2014/04/06/grid-frameworks-sass/
 
-.contain {
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
 	max-width: $screen-md;
 	margin: $h2 auto;
 }

@@ -4,10 +4,6 @@ This is boilerplate for wireframing created by me, Lara! Maybe you will like it 
 ##Tools used:
 * Sass
 * Grunt
-* Bower (nothing is installed but it's there if you want it!)
-* [SVG sprites](css-tricks.com/svg-sprites-use-better-icon-fonts/) (not working at the moment)
-* [Jeet](http://jeet.gs) for grids
-* [Breakpoint Slicer](https://github.com/lolmaus/breakpoint-slicer) for, um, breakpoints
 * Normalize
 * Probably some other stuff
 

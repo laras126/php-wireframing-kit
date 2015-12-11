@@ -8,31 +8,26 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Lara's Starter Kit</title>
-        <meta name="description" content="">
+        <title>Lara's PHP Wireframing Kit</title>
+        <meta name="description" content="A nice prototyping kit. PHP can be nice.">
         <meta name="viewport" content="width=device-width">
-		
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="assets/css/main.css">
-
-        <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
     </head>
 
     <body>
-        <!--[if lt IE 9]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
-
-        <?php //include_once("assets/img/svgs/arrow-down.svg"); ?>
-
 
         <header class="header" role="banner">
-            <div class="contain">
-                <h1 class="title">Website Starter Kit</h1>
-                <nav role="navigation" class="nav nav--main"></nav>
+            <div class="container">
+                <h1 class="title">PHP Wireframing Kit</h1>
+                <nav role="navigation" class="main-nav">
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="page.php?content=about">About <code>page.php</code></a></li>
+                        <li><a href="page.php?content=gallery">A Gallery</a></li>
+                    </ul>
+                </nav>
             </div>
         </header> <!-- /.header -->
 
-        <main class="main" role="main">
+        <main class="main container" role="main">
