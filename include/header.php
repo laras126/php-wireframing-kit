@@ -15,16 +15,17 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
 
-    <body>
+    <body class="body-<?php echo $content; ?>">
 
         <header class="header" role="banner">
             <div class="container">
                 <h1 class="title">PHP Wireframing Kit</h1>
                 <nav role="navigation" class="main-nav">
                     <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="page.php?content=about">About <code>page.php</code></a></li>
-                        <li><a href="page.php?content=gallery">A Gallery</a></li>
+                        <li><a href="index.php">Home (<code>index.php)</code></a></li>
+                        <li><a href="page.php?content=about">About (<code>page.php</code>)</a></li>
+                        <li><a href="blog.php">Blog (<code>blog.php</code>)</a></li>
+                        <li><a href="page.php?content=gallery">A Gallery (<code>gallery.php)</code></a></li>
                     </ul>
                 </nav>
             </div>

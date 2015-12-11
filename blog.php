@@ -5,10 +5,10 @@
 
 <p>This way is located in <code>helpers.php</code> and is a loop through the <code>posts</code> directory.</p>
 
-<?php 
+<?php
 	$open = '<article class="post">';
 	$close = '</article>';
-	printContent('posts', $open, $close); 
+	printContent('posts', $open, $close);
 ?>
 
 <?php include('include/footer.php'); ?>
